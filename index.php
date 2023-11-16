@@ -52,8 +52,6 @@ class Game{
 			$Hero->setMarbles($Hero->getMarbles() - $currentEnemy->getMarbles() - $Hero->getLoss());
 			echo $Hero->getName() . " lost against " . $currentEnemy->getName() . " ! <br>";
 			echo $Hero->getName() . " has " . $Hero->getMarbles() . " marbles left. <br>";
-			//! Remove the enemy from the array of enemies
-			array_splice($this->enemies, $this->randEnemy, 1);
 			echo count($this->enemies) . " remaining enemies. <br>";
 		}
 		$this->lastEnemyName = $currentEnemy->getName();
